@@ -13,6 +13,8 @@ import {
 } from "simple-icons";
 import { BadgeCheck, BrainCircuit, Eye, Workflow } from "lucide-react";
 
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 const linkedInPath =
   "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.556V9h3.563v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z";
 
@@ -109,27 +111,27 @@ const education = [
 const certifications = [
   {
     title: "CAE Results",
-    href: "/certificates/1727807237521.jpg",
+    href: withBase("certificates/1727807237521.jpg"),
   },
   {
     title: "Diseño y Gestión de Bases de Datos",
-    href: "/certificates/1727807595878.jpg",
+    href: withBase("certificates/1727807595878.jpg"),
   },
   {
     title: "Desarrollador Fullstack",
-    href: "/certificates/1727807702462.jpg",
+    href: withBase("certificates/1727807702462.jpg"),
   },
   {
     title: "Diseño Ágil de Sistemas",
-    href: "/certificates/1727807791180.jpg",
+    href: withBase("certificates/1727807791180.jpg"),
   },
   {
     title: "Título Técnico Analista Programador",
-    href: "/certificates/1729181657821%20(1).jpg",
+    href: withBase("certificates/1729181657821%20(1).jpg"),
   },
   {
     title: "Título Profesional Profesora de Inglés",
-    href: "/certificates/1728236398724.jpg",
+    href: withBase("certificates/1728236398724.jpg"),
   },
 ] as const;
 
@@ -214,7 +216,7 @@ export default function App() {
           <article className="profile-card">
             <div className="profile-photo-wrap">
               <img
-                src="/profilepicture.jpg"
+                src={withBase("profilepicture.jpg")}
                 alt="Retrato de Erika Mejías"
                 className="profile-photo"
               />
@@ -363,7 +365,7 @@ export default function App() {
                 </p>
                 <p>Certificación de inglés con nivel C1.</p>
                 <a
-                  href="/certificates/1727807237521.jpg"
+                  href={withBase("certificates/1727807237521.jpg")}
                   target="_blank"
                   rel="noreferrer"
                   className="certificate-link"
