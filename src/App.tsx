@@ -426,21 +426,21 @@ export default function App() {
             <article className="next-card">
               <h3>RAG y evaluación</h3>
               <p>
-                Sistemas pequeños con recuperación, trazabilidad y formas más
+                Desarrollar sistemas simples para portafolio con recuperación, trazabilidad y formas más
                 claras de medir respuestas de LLMs.
               </p>
             </article>
             <article className="next-card">
               <h3>Cloud, CI/CD y despliegue</h3>
               <p>
-                Una capa más ordenada de despliegue, automatización y trabajo
+                Implementar una capa más ordenada de despliegue, automatización y trabajo
                 con servicios en nube.
               </p>
             </article>
             <article className="next-card">
               <h3>Arquitectura aplicada</h3>
               <p>
-                Mejor criterio para diseñar soluciones de IA que se sostengan
+                Solidificar fundamentos con el fin de mejorar el criterio para diseñar soluciones de IA que se sostengan
                 bien en producción.
               </p>
             </article>
