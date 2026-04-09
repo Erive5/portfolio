@@ -489,7 +489,7 @@ export default function App() {
       <footer id="contact" className="footer">
         <div>
           <p className="eyebrow">Contacto</p>
-          <h2>Si tienes interés en colaborar, conversemos</h2>
+          <h2>Si tienes interés, conversemos</h2>
         </div>
         <div className="footer-links">
           {socialLinks.map((link) => (
